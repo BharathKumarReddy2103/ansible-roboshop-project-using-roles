@@ -1,0 +1,4 @@
+MYSQL_HOST: mysql.bharath2103.site
+MYSQL_ROOT_USER: root
+MYSQL_ROOT_PASSWORD: RoboShop@1
+CART_HOST: cart.bharath2103.site
