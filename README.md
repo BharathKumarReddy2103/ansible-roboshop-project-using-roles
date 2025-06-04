@@ -24,23 +24,56 @@ Each component (like `catalogue`, `cart`, `user`, `payment`, `shipping`, `mongod
 ```
 
 Ansible-Roboshop-Roles/
-├── roles/
-│   ├── catalogue/
-│   │   └── tasks/
-│   │       └── main.yaml
-│   ├── mongodb/
-│   │   └── tasks/
-│   │       └── main.yaml
-│   ├── common/
-│   │   ├── tasks/
-│   │   │   └── main.yaml
-│   │   └── templates/
-│   └── ...
 ├── inventory.ini
 ├── main.yaml
+├── mongodb.yaml
 ├── mysql.yaml
-├── vault/
-│   └── secrets.yaml
+├── roles/
+│ ├── cart/
+│ │ ├── tasks/main.yaml
+│ │ ├── templates/cart.service.j2
+│ │ └── vars/main.yaml
+│ ├── catalogue/
+│ │ ├── files/mongo.repo
+│ │ ├── tasks/main.yaml
+│ │ ├── templates/catalogue.service.j2
+│ │ └── vars/main.yaml
+│ ├── common/
+│ │ └── tasks/
+│ │ ├── app-setup.yaml
+│ │ ├── deployment.yaml
+│ │ ├── maven.yaml
+│ │ ├── nodejs.yaml
+│ │ ├── python.yaml
+│ │ └── systemd.yaml
+│ ├── user/
+│ │ ├── tasks/main.yaml
+│ │ ├── templates/user.service.j2
+│ │ └── vars/main.yaml
+│ ├── payment/
+│ │ ├── tasks/main.yaml
+│ │ ├── templates/payment.service.j2
+│ │ └── vars/main.yaml
+│ ├── shipping/
+│ │ ├── tasks/main.yaml
+│ │ ├── templates/shipping.service.j2
+│ │ └── vars/main.yaml
+│ ├── redis/
+│ │ └── tasks/main.yaml
+│ ├── rabbitmq/
+│ │ ├── files/rabbitmq.repo
+│ │ └── tasks/main.yaml
+│ ├── frontend/
+│ │ ├── handlers/main.yaml
+│ │ ├── tasks/main.yaml
+│ │ ├── templates/nginx.conf.j2
+│ │ └── vars/main.yaml
+│ ├── mongodb/
+│ │ ├── files/mongo.repo
+│ │ └── tasks/main.yaml
+│ └── mysql/
+│ ├── tasks/main.yaml
+│ └── vars/main.yaml
 
 ````
 
