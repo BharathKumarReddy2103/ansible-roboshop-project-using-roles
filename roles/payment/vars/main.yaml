@@ -1,0 +1,5 @@
+CART_HOST: cart.bharath2103.site
+USER_HOST: user.bharath2103.site
+RABBITMQ_HOST: rabbitmq.bharath2103.site
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123
