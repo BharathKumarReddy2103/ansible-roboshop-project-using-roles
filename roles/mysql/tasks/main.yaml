@@ -17,5 +17,5 @@
   - boto3
   - botocore
 
-- name: setp root password
-  ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }}
+# - name: setp root password
+#   ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }}
