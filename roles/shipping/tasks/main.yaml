@@ -16,10 +16,10 @@
     login_host: "{{ MYSQL_HOST }}"
     state: import
     target: "{{ item }}"
-  loop:
-  - /app/db/schema.sql
-  - /app/db/app-user.sql
-  - /app/db/master-data.sql
+  # loop:
+  # - /app/db/schema.sql
+  # - /app/db/app-user.sql
+  # - /app/db/master-data.sql
 
 - name: systemd setup
   include_role:
