@@ -5,27 +5,27 @@
     name: "{{ component }}"
     state: stopped
 
-# - name: remove /app directory
-#   ansible.builtin.file:
-#     state: absent
-#     path: /app
+- name: remove /app directory
+  ansible.builtin.file:
+    state: absent
+    path: /app
 
-# - name: create /app directory
-#   ansible.builtin.file:
-#     state: directory
-#     path: /app
+- name: create /app directory
+  ansible.builtin.file:
+    state: directory
+    path: /app
 
-# - name: download application
-#   ansible.builtin.unarchive:
-#     src: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}.zip"
-#     dest: /app
-#     remote_src: yes
+- name: download application
+  ansible.builtin.unarchive:
+    src: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}.zip"
+    dest: /app
+    remote_src: yes
 
-# - name: install dependencies
-#   community.general.npm:
-#     path: /app
+- name: install dependencies
+  community.general.npm:
+    path: /app
 
-# - name: restart {{ component }}
-#   ansible.builtin.service:
-#     name: "{{ component }}"
-#     state: restarted
+- name: restart {{ component }}
+  ansible.builtin.service:
+    name: "{{ component }}"
+    state: restarted
