@@ -134,6 +134,20 @@ Please see the guidelines below:
 3. Open a pull request and describe your changes.
 4. For major changes, open an issue first to discuss what you would like to change.
 
+---
+
+## Suggestions & Future Improvements
+
+This project follows solid Ansible and DevOps practices. The following improvements are planned or being considered:
+
+- [ ] Add repository description and LICENSE file.
+- [ ] Include badges for build, license, and last commit.
+- [ ] Expand README with more usage examples and troubleshooting.
+- [ ] Add more screenshots of deployments and Ansible output.
+- [ ] Enable Discussions and Wiki for community knowledge sharing.
+- [ ] Add detailed contributing guidelines.
+- [ ] Highlight further Ansible Vault usage and best practices.
+
 Feedback and contributions are welcome.
 
 ---
