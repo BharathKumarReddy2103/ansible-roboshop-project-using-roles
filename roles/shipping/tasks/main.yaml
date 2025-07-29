@@ -11,9 +11,9 @@
 - name: import data
   community.mysql.mysql_db:
     name: all
-    login_user: root
-    login_password: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/mysql/mysql_root_password', region='us-east-1', decrypt=True) }}"
-    login_host: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/mysql/mysql_host', region='us-east-1') }}"
+    login_user: "{{ MYSQL_ROOT_USER }}"
+    login_password: "{{ MYSQL_ROOT_PASSWORD }}"
+    login_host: "{{ MYSQL_HOST }}"
     state: import
     target: "{{ item }}"
   loop:
