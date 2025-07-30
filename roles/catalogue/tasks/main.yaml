@@ -30,11 +30,11 @@
     # ignore_errors: true
     # ignore_unreachable: true
 
-- name: load products
-  ansible.builtin.shell: mongosh --host mongodb.bharath2103.site < /app/db/master-data.js
-  when: catalogue_output.stdout | int < 0
-  ignore_errors: true
-  # ignore_unreachable: true
+# - name: load products
+#   ansible.builtin.shell: mongosh --host mongodb.bharath2103.site < /app/db/master-data.js
+#   when: catalogue_output.stdout | int < 0
+#   ignore_errors: true
+#   # ignore_unreachable: true
 
 - name: systemd setup
   include_role:
